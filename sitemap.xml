@@ -3,17 +3,76 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>http://tech.jaswine.com/springcloud/docs/base/auth/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>http://tech.jaswine.com/springcloud/docs/base/bus/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>http://tech.jaswine.com/springcloud/docs/base/config/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://tech.jaswine.com/springcloud/docs/base/eureka/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://tech.jaswine.com/springcloud/docs/base/zuul/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://tech.jaswine.com/springcloud/docs/discovery/eureka/doc/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://tech.jaswine.com/springcloud/docs/discovery/nacos/availability/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://tech.jaswine.com/springcloud/docs/discovery/nacos/install/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://tech.jaswine.com/springcloud/docs/discovery/nacos/metadata/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://tech.jaswine.com/springcloud/docs/discovery/nacos/profiles/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://tech.jaswine.com/springcloud/docs/discovery/nacos/register/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://tech.jaswine.com/springcloud/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://tech.jaswine.com/springcloud/docs/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://tech.jaswine.com/springcloud/</loc>
+  </url>
+  
+  <url>
+    <loc>http://tech.jaswine.com/springcloud/tags/</loc>
     <priority>0</priority>
   </url>
   
