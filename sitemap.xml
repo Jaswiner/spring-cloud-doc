@@ -3,86 +3,96 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://tech.jaswine.com/springcloud/docs/base/auth/</loc>
+    <loc>https://jaswine.com/cloud/docs/base/auth/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://tech.jaswine.com/springcloud/docs/base/bus/</loc>
+    <loc>https://jaswine.com/cloud/docs/base/bus/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://tech.jaswine.com/springcloud/docs/base/config/</loc>
+    <loc>https://jaswine.com/cloud/docs/base/config/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://tech.jaswine.com/springcloud/docs/base/eureka/</loc>
+    <loc>https://jaswine.com/cloud/docs/base/eureka/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://tech.jaswine.com/springcloud/docs/base/zuul/</loc>
+    <loc>https://jaswine.com/cloud/docs/base/zuul/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://tech.jaswine.com/springcloud/docs/discovery/eureka/doc/</loc>
+    <loc>https://jaswine.com/cloud/docs/discovery/nacos/availability/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://tech.jaswine.com/springcloud/docs/discovery/nacos/availability/</loc>
+    <loc>https://jaswine.com/cloud/docs/discovery/nacos/install/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://tech.jaswine.com/springcloud/docs/discovery/nacos/install/</loc>
+    <loc>https://jaswine.com/cloud/docs/discovery/nacos/metadata/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://tech.jaswine.com/springcloud/docs/discovery/nacos/metadata/</loc>
+    <loc>https://jaswine.com/cloud/docs/discovery/nacos/profiles/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://tech.jaswine.com/springcloud/docs/discovery/nacos/profiles/</loc>
+    <loc>https://jaswine.com/cloud/docs/discovery/nacos/register/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://tech.jaswine.com/springcloud/docs/discovery/nacos/register/</loc>
+    <loc>https://jaswine.com/cloud/docs/gateway/limit/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://tech.jaswine.com/springcloud/docs/gateway/use/</loc>
+    <loc>https://jaswine.com/cloud/docs/gateway/predicate/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://tech.jaswine.com/springcloud/docs/loadblance/ribbon/use/</loc>
+    <loc>https://jaswine.com/cloud/docs/gateway/sentinel/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://tech.jaswine.com/springcloud/categories/</loc>
+    <loc>https://jaswine.com/cloud/docs/gateway/use/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://tech.jaswine.com/springcloud/docs/</loc>
+    <loc>https://jaswine.com/cloud/docs/loadblance/ribbon/use/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://tech.jaswine.com/springcloud/</loc>
+    <loc>https://jaswine.com/cloud/categories/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://tech.jaswine.com/springcloud/tags/</loc>
+    <loc>https://jaswine.com/cloud/docs/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jaswine.com/cloud/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jaswine.com/cloud/tags/</loc>
     <priority>0</priority>
   </url>
   
