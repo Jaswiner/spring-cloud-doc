@@ -3,96 +3,96 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://jaswine.com/cloud/docs/base/auth/</loc>
+    <loc>https://jaswine.com/docs/cloud/docs/base/auth/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jaswine.com/cloud/docs/base/bus/</loc>
+    <loc>https://jaswine.com/docs/cloud/docs/base/bus/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jaswine.com/cloud/docs/base/config/</loc>
+    <loc>https://jaswine.com/docs/cloud/docs/base/config/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jaswine.com/cloud/docs/base/eureka/</loc>
+    <loc>https://jaswine.com/docs/cloud/docs/base/eureka/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jaswine.com/cloud/docs/base/zuul/</loc>
+    <loc>https://jaswine.com/docs/cloud/docs/base/zuul/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jaswine.com/cloud/docs/discovery/nacos/availability/</loc>
+    <loc>https://jaswine.com/docs/cloud/docs/discovery/nacos/availability/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jaswine.com/cloud/docs/discovery/nacos/install/</loc>
+    <loc>https://jaswine.com/docs/cloud/docs/discovery/nacos/install/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jaswine.com/cloud/docs/discovery/nacos/metadata/</loc>
+    <loc>https://jaswine.com/docs/cloud/docs/discovery/nacos/metadata/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jaswine.com/cloud/docs/discovery/nacos/profiles/</loc>
+    <loc>https://jaswine.com/docs/cloud/docs/discovery/nacos/profiles/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jaswine.com/cloud/docs/discovery/nacos/register/</loc>
+    <loc>https://jaswine.com/docs/cloud/docs/discovery/nacos/register/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jaswine.com/cloud/docs/gateway/limit/</loc>
+    <loc>https://jaswine.com/docs/cloud/docs/gateway/limit/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jaswine.com/cloud/docs/gateway/predicate/</loc>
+    <loc>https://jaswine.com/docs/cloud/docs/gateway/predicate/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jaswine.com/cloud/docs/gateway/sentinel/</loc>
+    <loc>https://jaswine.com/docs/cloud/docs/gateway/sentinel/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jaswine.com/cloud/docs/gateway/use/</loc>
+    <loc>https://jaswine.com/docs/cloud/docs/gateway/use/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jaswine.com/cloud/docs/loadblance/ribbon/use/</loc>
+    <loc>https://jaswine.com/docs/cloud/docs/loadblance/ribbon/use/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jaswine.com/cloud/categories/</loc>
+    <loc>https://jaswine.com/docs/cloud/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jaswine.com/cloud/docs/</loc>
+    <loc>https://jaswine.com/docs/cloud/docs/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jaswine.com/cloud/</loc>
+    <loc>https://jaswine.com/docs/cloud/</loc>
   </url>
   
   <url>
-    <loc>https://jaswine.com/cloud/tags/</loc>
+    <loc>https://jaswine.com/docs/cloud/tags/</loc>
     <priority>0</priority>
   </url>
   

@@ -2,74 +2,74 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docs on SpringCloud</title>
-    <link>https://jaswine.com/cloud/docs/</link>
+    <link>https://jaswine.com/docs/cloud/docs/</link>
     <description>Recent content in Docs on SpringCloud</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://jaswine.com/cloud/docs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jaswine.com/docs/cloud/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://jaswine.com/cloud/docs/base/auth/</link>
+      <link>https://jaswine.com/docs/cloud/docs/base/auth/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jaswine.com/cloud/docs/base/auth/</guid>
+      <guid>https://jaswine.com/docs/cloud/docs/base/auth/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://jaswine.com/cloud/docs/base/bus/</link>
+      <link>https://jaswine.com/docs/cloud/docs/base/bus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jaswine.com/cloud/docs/base/bus/</guid>
+      <guid>https://jaswine.com/docs/cloud/docs/base/bus/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://jaswine.com/cloud/docs/base/config/</link>
+      <link>https://jaswine.com/docs/cloud/docs/base/config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jaswine.com/cloud/docs/base/config/</guid>
+      <guid>https://jaswine.com/docs/cloud/docs/base/config/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://jaswine.com/cloud/docs/base/eureka/</link>
+      <link>https://jaswine.com/docs/cloud/docs/base/eureka/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jaswine.com/cloud/docs/base/eureka/</guid>
+      <guid>https://jaswine.com/docs/cloud/docs/base/eureka/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://jaswine.com/cloud/docs/base/zuul/</link>
+      <link>https://jaswine.com/docs/cloud/docs/base/zuul/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jaswine.com/cloud/docs/base/zuul/</guid>
+      <guid>https://jaswine.com/docs/cloud/docs/base/zuul/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://jaswine.com/cloud/docs/discovery/nacos/availability/</link>
+      <link>https://jaswine.com/docs/cloud/docs/discovery/nacos/availability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jaswine.com/cloud/docs/discovery/nacos/availability/</guid>
+      <guid>https://jaswine.com/docs/cloud/docs/discovery/nacos/availability/</guid>
       <description>高可用的Nacos  @Nacos版本:1.1.4 @SpringCloud-Alibaba版本:2.1.0.RELEASE  nacos作为服务的注册和发现中心，必须高可用性，一旦Nacos宕机就会影响全部的服务。</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://jaswine.com/cloud/docs/discovery/nacos/install/</link>
+      <link>https://jaswine.com/docs/cloud/docs/discovery/nacos/install/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jaswine.com/cloud/docs/discovery/nacos/install/</guid>
+      <guid>https://jaswine.com/docs/cloud/docs/discovery/nacos/install/</guid>
       <description> 安装  @官网地址:🔗Nacos Offical Doc  Nacos是阿里巴巴开源的服务注册发现组件，同时还是一个配置服务器。
 Nacos和Eureka是不一样的，Nacos提供一个服务端来供每个客户端来注册自己和寻找自己所需要的服务。
 安装Nacos的方法有
@@ -79,19 +79,19 @@ Nacos和Eureka是不一样的，Nacos提供一个服务端来供每个客户端�
     
     <item>
       <title></title>
-      <link>https://jaswine.com/cloud/docs/discovery/nacos/metadata/</link>
+      <link>https://jaswine.com/docs/cloud/docs/discovery/nacos/metadata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jaswine.com/cloud/docs/discovery/nacos/metadata/</guid>
+      <guid>https://jaswine.com/docs/cloud/docs/discovery/nacos/metadata/</guid>
       <description> Nacos元数据 </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://jaswine.com/cloud/docs/discovery/nacos/profiles/</link>
+      <link>https://jaswine.com/docs/cloud/docs/discovery/nacos/profiles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jaswine.com/cloud/docs/discovery/nacos/profiles/</guid>
+      <guid>https://jaswine.com/docs/cloud/docs/discovery/nacos/profiles/</guid>
       <description>多配置&amp;amp;服务隔离  @Nacos版本:1.1.4 @SpringCloud-Alibaba版本:2.1.0.RELEASE   默认已经引入了
  spring-cloud-alibaba-nacos-discovery spring-cloud-alibaba-nacos-config   在开发项目的时候，一般有三个环境:
  开发环境 测试环境 线上环境  微服务中服务被拆分成很多块，每一个服务都有自己的配置信息，所有要做到服务和配置之间的隔离，Nacos可以完成这些,Nacos提供了三种方式:
@@ -103,10 +103,10 @@ Nacos和Eureka是不一样的，Nacos提供一个服务端来供每个客户端�
     
     <item>
       <title></title>
-      <link>https://jaswine.com/cloud/docs/discovery/nacos/register/</link>
+      <link>https://jaswine.com/docs/cloud/docs/discovery/nacos/register/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jaswine.com/cloud/docs/discovery/nacos/register/</guid>
+      <guid>https://jaswine.com/docs/cloud/docs/discovery/nacos/register/</guid>
       <description>注册服务  @Nacos版本:1.1.4 @SpringCloud-Alibaba版本:2.1.0.RELEASE  引入依赖包 &amp;lt;!-- SpringCloud-Alibaba依赖关系 --&amp;gt; &amp;lt;dependencyManagement&amp;gt; &amp;lt;dependencies&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.alibaba.cloud&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-cloud-alibaba-dependencies&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;2.1.0.RELEASE&amp;lt;/version&amp;gt; &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt; &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;/dependencies&amp;gt; &amp;lt;/dependencyManagement&amp;gt; &amp;lt;!-- 引入Nacos依赖 --&amp;gt; &amp;lt;dependencies&amp;gt; &amp;lt;!--nacos--&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.alibaba.cloud&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-cloud-alibaba-nacos-discovery&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.alibaba.cloud&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-cloud-alibaba-nacos-config&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;/dependencies&amp;gt;  配置注册信息 在项目的bootstrap.yml中配置如下信息:
 spring: application: name: CLOUD-UUM --- spring: profiles: active: test --- # nacos 配置 spring: cloud: nacos: config: # 方便和服务发现分开,更能够体现性能 server-addr: 127.0.0.1:8848 file-extension: yaml refreshable-dataids: ${spring.application.name}-${spring.profiles.active}.yaml  在Nacos管理页面配置注册信息：
 # Nacos配置 spring: cloud: nacos: discovery: server-addr: jaswine.</description>
@@ -114,37 +114,37 @@ spring: application: name: CLOUD-UUM --- spring: profiles: active: test --- # na
     
     <item>
       <title></title>
-      <link>https://jaswine.com/cloud/docs/gateway/limit/</link>
+      <link>https://jaswine.com/docs/cloud/docs/gateway/limit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jaswine.com/cloud/docs/gateway/limit/</guid>
+      <guid>https://jaswine.com/docs/cloud/docs/gateway/limit/</guid>
       <description> Gateway实现限流 </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://jaswine.com/cloud/docs/gateway/predicate/</link>
+      <link>https://jaswine.com/docs/cloud/docs/gateway/predicate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jaswine.com/cloud/docs/gateway/predicate/</guid>
+      <guid>https://jaswine.com/docs/cloud/docs/gateway/predicate/</guid>
       <description> 自定义Predicate </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://jaswine.com/cloud/docs/gateway/sentinel/</link>
+      <link>https://jaswine.com/docs/cloud/docs/gateway/sentinel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jaswine.com/cloud/docs/gateway/sentinel/</guid>
+      <guid>https://jaswine.com/docs/cloud/docs/gateway/sentinel/</guid>
       <description> Gateway整合Sentinel </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://jaswine.com/cloud/docs/gateway/use/</link>
+      <link>https://jaswine.com/docs/cloud/docs/gateway/use/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jaswine.com/cloud/docs/gateway/use/</guid>
+      <guid>https://jaswine.com/docs/cloud/docs/gateway/use/</guid>
       <description> 使用Gateway(使用数据库存储路由信息)  @SpringCloud版本:Greenwich.SR5  gateway在项目中是网关的作用，这样众多的微服务的系统就可以统一接口了。所有的开头的都是相同的，不同的后缀代表的是不同的微服务。
  spring-cloud-starter-gateway是基于spring5中的WebFlux来编写的,实现了响应式编程。关于WebFlux看这里// TODO
  spring-cloud-gateway提供三种配置路由的方式:
@@ -155,10 +155,10 @@ spring: application: name: CLOUD-UUM --- spring: profiles: active: test --- # na
     
     <item>
       <title></title>
-      <link>https://jaswine.com/cloud/docs/loadblance/ribbon/use/</link>
+      <link>https://jaswine.com/docs/cloud/docs/loadblance/ribbon/use/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jaswine.com/cloud/docs/loadblance/ribbon/use/</guid>
+      <guid>https://jaswine.com/docs/cloud/docs/loadblance/ribbon/use/</guid>
       <description>使用Ribbon实现服务调用的负载均衡  @SpringCloud-Alibaba版本:2.1.0.RELEASE  在Spring Cloud Alibaba中的nacos-discovery组件中我们已经集成了Ribbon，所有我们不用再引入依赖</description>
     </item>
     
