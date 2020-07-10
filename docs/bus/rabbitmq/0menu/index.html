@@ -12,7 +12,7 @@
 <title>
   
     
-    Register
+    0menu
   
  | SpringCloud</title>
 
@@ -50,7 +50,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   <style>
-  nav ul a[href$="\2f docs\2f cloud\2f docs\2f discovery\2fnacos\2fregister\2f "] {
+  nav ul a[href$="\2f docs\2f cloud\2f docs\2f bus\2frabbitmq\2f 0menu\2f "] {
       color: #004ed0;
   }
   </style>
@@ -141,7 +141,7 @@ https://github.com/alex-shpak/hugo-book
   <strong>
   
     
-    Register
+    0menu
   
 </strong>
 </header>
@@ -149,86 +149,7 @@ https://github.com/alex-shpak/hugo-book
       
 <article class="markdown">
 
-<h1 id="注册服务">注册服务</h1>
-
-<hr />
-
-<ul>
-<li><strong>@Nacos版本:</strong>1.1.4</li>
-<li><strong>@SpringCloud-Alibaba版本:</strong>2.1.0.RELEASE</li>
-</ul>
-
-<hr />
-
-<h2 id="引入依赖包">引入依赖包</h2>
-
-<pre><code class="language-xml">
-&lt;!-- SpringCloud-Alibaba依赖关系 --&gt;
-&lt;dependencyManagement&gt;
-    &lt;dependencies&gt;
-        &lt;dependency&gt;
-            &lt;groupId&gt;com.alibaba.cloud&lt;/groupId&gt;
-            &lt;artifactId&gt;spring-cloud-alibaba-dependencies&lt;/artifactId&gt;
-            &lt;version&gt;2.1.0.RELEASE&lt;/version&gt;
-            &lt;type&gt;pom&lt;/type&gt;
-            &lt;scope&gt;import&lt;/scope&gt;
-        &lt;/dependency&gt;
-     &lt;/dependencies&gt;
-&lt;/dependencyManagement&gt;
-
-&lt;!-- 引入Nacos依赖 --&gt;
-&lt;dependencies&gt;
-    &lt;!--nacos--&gt;
-    &lt;dependency&gt;
-        &lt;groupId&gt;com.alibaba.cloud&lt;/groupId&gt;
-        &lt;artifactId&gt;spring-cloud-alibaba-nacos-discovery&lt;/artifactId&gt;
-    &lt;/dependency&gt;
-
-    &lt;dependency&gt;
-        &lt;groupId&gt;com.alibaba.cloud&lt;/groupId&gt;
-        &lt;artifactId&gt;spring-cloud-alibaba-nacos-config&lt;/artifactId&gt;
-    &lt;/dependency&gt;
-&lt;/dependencies&gt;
-</code></pre>
-
-<h2 id="配置注册信息">配置注册信息</h2>
-
-<p>在项目的<code>bootstrap.yml</code>中配置如下信息:</p>
-
-<pre><code class="language-yaml">
-spring:
-  application:
-    name: CLOUD-UUM
----
-spring:
-  profiles:
-    active: test
----        
-# nacos 配置
-spring:
-  cloud:
-    nacos:
-      config:
-        # 方便和服务发现分开,更能够体现性能
-        server-addr: 127.0.0.1:8848
-        file-extension: yaml
-        refreshable-dataids: ${spring.application.name}-${spring.profiles.active}.yaml
-
-</code></pre>
-
-<p>在<code>Nacos</code>管理页面配置注册信息：</p>
-
-<pre><code class="language-yaml"># Nacos配置
-spring:
-  cloud:
-    nacos:
-      discovery:
-        server-addr: jaswine.top:18848
-</code></pre>
-
-<h2 id="启动应用">启动应用</h2>
-
-<p>直接启动应用就可以在<code>服务管理-&gt;服务列表</code>中看到启动好的服务了</p>
+<h1 id="使用rabbit-mq完成消息总线">使用Rabbit MQ完成消息总线</h1>
 </article>
 
       
@@ -242,12 +163,7 @@ spring:
   <aside class="book-toc level-3 fixed">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#注册服务">注册服务</a>
-<ul>
-<li><a href="#引入依赖包">引入依赖包</a></li>
-<li><a href="#配置注册信息">配置注册信息</a></li>
-<li><a href="#启动应用">启动应用</a></li>
-</ul></li>
+<li><a href="#使用rabbit-mq完成消息总线">使用Rabbit MQ完成消息总线</a></li>
 </ul>
 </nav>
   </aside>

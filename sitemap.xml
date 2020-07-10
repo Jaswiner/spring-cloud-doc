@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jaswine.com/docs/cloud/docs/auth/oauth2/0menu/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://jaswine.com/docs/cloud/docs/base/auth/</loc>
     <priority>0</priority>
   </url>
@@ -24,6 +29,31 @@
   
   <url>
     <loc>https://jaswine.com/docs/cloud/docs/base/zuul/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jaswine.com/docs/cloud/docs/bus/kafka/0menu/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jaswine.com/docs/cloud/docs/bus/rabbitmq/0menu/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jaswine.com/docs/cloud/docs/bus/rocketmq/0menu/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jaswine.com/docs/cloud/docs/call/feign/0menu/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jaswine.com/docs/cloud/docs/discovery/nacos/0menu/</loc>
     <priority>0</priority>
   </url>
   
@@ -53,27 +83,82 @@
   </url>
   
   <url>
-    <loc>https://jaswine.com/docs/cloud/docs/gateway/limit/</loc>
+    <loc>https://jaswine.com/docs/cloud/docs/error/hystrix/0menu/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jaswine.com/docs/cloud/docs/gateway/predicate/</loc>
+    <loc>https://jaswine.com/docs/cloud/docs/error/sentinel/0menu/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jaswine.com/docs/cloud/docs/gateway/sentinel/</loc>
+    <loc>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/0menu/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jaswine.com/docs/cloud/docs/gateway/use/</loc>
+    <loc>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/actuator/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/base/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/error/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/filter/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/global_filter/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/hystrix/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/limit/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/predicate/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/sentinel/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/use/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jaswine.com/docs/cloud/docs/loadblance/ribbon/0menu/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jaswine.com/docs/cloud/docs/loadblance/ribbon/use/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jaswine.com/docs/cloud/docs/monitor/sleuth/0menu/</loc>
     <priority>0</priority>
   </url>
   

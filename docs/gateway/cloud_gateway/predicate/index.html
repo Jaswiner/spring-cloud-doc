@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  
+    
+    Predicate
+  
+ | SpringCloud</title>
+
+
+
+<link rel="stylesheet" href="/docs/cloud/book.min.7f2b6faa569004d64a7fe33a947703a13ddd13e8f56261e340ae4c5547c01c9c.css">
+
+
+<link rel="icon" href="/docs/cloud/favicon.png" type="image/x-icon">
+
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav>
+<h2 class="book-brand">
+  <a href="https://jaswine.com/docs/cloud">SpringCloud</a>
+</h2>
+
+
+
+    
+  
+  
+  
+
+  <style>
+  nav ul a[href$="\2f docs\2f cloud\2f docs\2fgateway\2f cloud_gateway\2fpredicate\2f "] {
+      color: #004ed0;
+  }
+  </style>
+
+<ul>
+<li><strong><span style="color:#551A8B">服务发现</span></strong>
+
+<ul>
+<li><strong><em><a href="/docs/cloud/docs/discovery/nacos/0menu/">Nacos</a></em></strong></li>
+</ul></li>
+<li><strong><span style="color:#551A8B">负载均衡</span></strong>
+
+<ul>
+<li><strong><em>Ribbon(客户端)</em></strong></li>
+</ul></li>
+<li><strong><span style="color:#551A8B">服务网关</span></strong>
+
+<ul>
+<li><strong><em><a href="/docs/cloud/docs/gateway/cloud_gateway/0menu/">Spring Cloud Gateway</a></em></strong></li>
+</ul></li>
+<li><strong><span style="color:#551A8B">授权/认证</span></strong>
+
+<ul>
+<li><strong><em><a href="/docs/cloud/docs/auth/oauth2/0menu/">Security OAuth2</a></em></strong></li>
+</ul></li>
+<li><strong><span style="color:#551A8B">服务配置</span></strong>
+
+<ul>
+<li><strong><em>Nacos Config</em></strong></li>
+</ul></li>
+<li><strong><span style="color:#551A8B">服务调用</span></strong>
+
+<ul>
+<li><strong><em><a href="/docs/cloud/docs/call/feign/0menu/">Feign</a></em></strong></li>
+</ul></li>
+<li><strong><span style="color:#551A8B">服务容错</span></strong>
+
+<ul>
+<li><strong><em><a href="/docs/cloud/docs/error/hystrix/0menu/">Spring Cloud Hystrix</a></em></strong></li>
+<li><strong><em><a href="/docs/cloud/docs/error/sentinel/0menu/">Spring Cloud Sentinel</a></em></strong></li>
+</ul></li>
+<li><strong><span style="color:#551A8B">服务监控</span></strong>
+
+<ul>
+<li><strong><em><a href="/docs/cloud/docs/monitor/sleuth/0menu/">Spring Cloud Sleuth</a></em></strong></li>
+<li><strong><em>Spring Cloud Zipkin</em></strong></li>
+</ul></li>
+<li><strong><span style="color:#551A8B">消息驱动</span></strong>
+
+<ul>
+<li><strong><em><a href="/docs/cloud/docs/bus/rocketmq/0menu/">Stream-RocketMQ</a></em></strong></li>
+<li><strong><em><a href="/docs/cloud/docs/bus/rabbitmq/0menu/">Stream-RabbitMQ</a></em></strong></li>
+<li><strong><em><a href="/docs/cloud/docs/bus/kafka/0menu/">Stream-Kafka</a></em></strong></li>
+</ul></li>
+<li><strong><span style="color:#551A8B">大型项目架构</span></strong>
+
+<ul>
+<li><a href="#"><strong>分层/分割</strong></a>
+
+<ul>
+<li><a href="#">服务分割</a></li>
+<li><a href="#">数据库分库分表</a></li>
+</ul></li>
+<li><a href="#"><strong>集群/分布式</strong></a></li>
+<li><a href="#"><strong>缓存</strong></a></li>
+<li><a href="#"><strong>异步</strong></a></li>
+<li><a href="#"><strong>冗余</strong></a></li>
+<li><a href="#"><strong>自动化</strong></a></li>
+<li><a href="#"><strong>安全</strong></a></li>
+</ul></li>
+</ul>
+
+
+
+
+
+</nav>
+
+
+
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/docs/cloud/svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>
+  
+    
+    Predicate
+  
+</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="默认的predicate及自定义predicate">默认的Predicate及自定义Predicate</h1>
+
+<!-- TOC -->
+
+<ul>
+<li><a href="#默认的predicate及自定义predicate">默认的Predicate及自定义Predicate</a>
+
+<ul>
+<li><a href="#predicate做什么的">Predicate做什么的？</a></li>
+<li><a href="#自带的predicate">自带的Predicate</a></li>
+<li><a href="#如何自定义predicate">如何自定义Predicate</a></li>
+<li><a href="#如何配置使predicate生效">如何配置使Predicate生效</a></li>
+</ul></li>
+</ul>
+
+<!-- /TOC -->
+
+<hr />
+
+<p><a href="#">🔗「源码分析」Spring Cloud Gateway源码#Predicate</a></p>
+
+<h2 id="predicate做什么的">Predicate做什么的？</h2>
+
+<p>符合Predicate的条件，就使用该路由的配置，否则就不管</p>
+
+<p><strong>For Example:</strong></p>
+
+<ul>
+<li>请求路径匹配:</li>
+</ul>
+
+<blockquote>
+<p><em>访问<code>/app1/**</code>全部匹配到 <a href="https://jaswine.com">https://jaswine.com</a> 这个网站上</em></p>
+</blockquote>
+
+<ul>
+<li>规定时间点可以访问</li>
+</ul>
+
+<blockquote>
+<p><em>在早上9:00到下午17:00可以访问网站</em></p>
+</blockquote>
+
+<h2 id="自带的predicate">自带的Predicate</h2>
+
+<p><strong><a href="https://cloud.spring.io/spring-cloud-gateway/reference/html/#gateway-request-predicates-factories">🔗「官方Doc」Spring Cloud Gateway自带的Predicate</a></strong></p>
+
+<table>
+<thead>
+<tr>
+<th align="left">缩写</th>
+<th align="left">作用</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">After</td>
+<td align="left">在改时间后可用</td>
+</tr>
+
+<tr>
+<td align="left">Before</td>
+<td align="left">在该时间之前可用</td>
+</tr>
+
+<tr>
+<td align="left">Between</td>
+<td align="left">在该时间段可用</td>
+</tr>
+
+<tr>
+<td align="left">Cookie</td>
+<td align="left">带有符合一定格式的cookie可用</td>
+</tr>
+
+<tr>
+<td align="left">Header</td>
+<td align="left">带有特定格式的请求头的时候可用</td>
+</tr>
+
+<tr>
+<td align="left">Host</td>
+<td align="left">只允许host满足规定格式时候可用</td>
+</tr>
+
+<tr>
+<td align="left">Method</td>
+<td align="left">只允许特定的方法可用</td>
+</tr>
+
+<tr>
+<td align="left">Path</td>
+<td align="left">只有访问一定格式的路径时候可用</td>
+</tr>
+
+<tr>
+<td align="left">Query</td>
+<td align="left">只有带有规定参数的时候可用</td>
+</tr>
+
+<tr>
+<td align="left">RemoteAddr</td>
+<td align="left">符合规定的某一网段可用</td>
+</tr>
+
+<tr>
+<td align="left">Weight</td>
+<td align="left">配置路由比重</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="如何自定义predicate">如何自定义Predicate</h2>
+
+<ul>
+<li>1.继承<code>AbstractRoutePredicateFactory</code>类。重写<code>shortcutFiledOrder()</code>和<code>apply()</code></li>
+<li>2.类名是xx+RoutePredicateFactory</li>
+<li>3.创建一个配置类，这个类作为泛型参数传到自定义的类中</li>
+</ul>
+
+<p><strong>For Example</strong></p>
+
+<h2 id="如何配置使predicate生效">如何配置使Predicate生效</h2>
+
+<p><strong><a href="https://cloud.spring.io/spring-cloud-gateway/reference/html/#configuring-route-predicate-factories-and-gateway-filter-factories">🔗「官方Doc」配置Predicate</a></strong></p>
+
+<ul>
+<li><strong>1.使用缩写的方式</strong></li>
+</ul>
+
+<pre><code class="language-yaml">spring:
+  cloud:
+    gateway:
+      routes:
+      - id: after_route
+        uri: https://example.org
+        predicates:
+        - Cookie=mycookie,mycookievalue
+</code></pre>
+
+<ul>
+<li><strong>2.使用Java配置</strong></li>
+</ul>
+
+<blockquote>
+<p>参考 <a href="/docs/cloud/docs/gateway/cloud_gateway/use/">🔗动态配置Route(Redis存储)</a></p>
+</blockquote>
+</article>
+
+      
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-3 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#默认的predicate及自定义predicate">默认的Predicate及自定义Predicate</a>
+<ul>
+<li><a href="#predicate做什么的">Predicate做什么的？</a></li>
+<li><a href="#自带的predicate">自带的Predicate</a></li>
+<li><a href="#如何自定义predicate">如何自定义Predicate</a></li>
+<li><a href="#如何配置使predicate生效">如何配置使Predicate生效</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  
+  
+  
+</body>
+
+</html>

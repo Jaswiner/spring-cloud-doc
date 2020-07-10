@@ -12,7 +12,7 @@
 <title>
   
     
-    Register
+    Base
   
  | SpringCloud</title>
 
@@ -50,7 +50,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   <style>
-  nav ul a[href$="\2f docs\2f cloud\2f docs\2f discovery\2fnacos\2fregister\2f "] {
+  nav ul a[href$="\2f docs\2f cloud\2f docs\2fgateway\2f cloud_gateway\2f base\2f "] {
       color: #004ed0;
   }
   </style>
@@ -141,7 +141,7 @@ https://github.com/alex-shpak/hugo-book
   <strong>
   
     
-    Register
+    Base
   
 </strong>
 </header>
@@ -149,86 +149,80 @@ https://github.com/alex-shpak/hugo-book
       
 <article class="markdown">
 
-<h1 id="注册服务">注册服务</h1>
+<h1 id="spring-cloud-gateway基础">Spring Cloud Gateway基础</h1>
 
-<hr />
+<!-- TOC -->
 
 <ul>
-<li><strong>@Nacos版本:</strong>1.1.4</li>
-<li><strong>@SpringCloud-Alibaba版本:</strong>2.1.0.RELEASE</li>
+<li><a href="#spring-cloud-gateway基础">Spring Cloud Gateway基础</a>
+
+<ul>
+<li><a href="#底层实现">底层实现</a></li>
+<li><a href="#核心概念">核心概念</a></li>
+<li><a href="#架构">架构</a></li>
+<li><a href="#重要实现类">重要实现类</a></li>
+</ul></li>
 </ul>
+
+<!-- /TOC -->
 
 <hr />
 
-<h2 id="引入依赖包">引入依赖包</h2>
+<h2 id="底层实现">底层实现</h2>
 
-<pre><code class="language-xml">
-&lt;!-- SpringCloud-Alibaba依赖关系 --&gt;
-&lt;dependencyManagement&gt;
-    &lt;dependencies&gt;
-        &lt;dependency&gt;
-            &lt;groupId&gt;com.alibaba.cloud&lt;/groupId&gt;
-            &lt;artifactId&gt;spring-cloud-alibaba-dependencies&lt;/artifactId&gt;
-            &lt;version&gt;2.1.0.RELEASE&lt;/version&gt;
-            &lt;type&gt;pom&lt;/type&gt;
-            &lt;scope&gt;import&lt;/scope&gt;
-        &lt;/dependency&gt;
-     &lt;/dependencies&gt;
-&lt;/dependencyManagement&gt;
+<p><code>Spring Cloud Gateway</code>底层是使用<code>netty</code>、<code>Reactor</code>和<code>SpringBoot WebFlux</code>实现的</p>
 
-&lt;!-- 引入Nacos依赖 --&gt;
-&lt;dependencies&gt;
-    &lt;!--nacos--&gt;
-    &lt;dependency&gt;
-        &lt;groupId&gt;com.alibaba.cloud&lt;/groupId&gt;
-        &lt;artifactId&gt;spring-cloud-alibaba-nacos-discovery&lt;/artifactId&gt;
-    &lt;/dependency&gt;
+<blockquote>
+<ul>
+<li>关于Netty
 
-    &lt;dependency&gt;
-        &lt;groupId&gt;com.alibaba.cloud&lt;/groupId&gt;
-        &lt;artifactId&gt;spring-cloud-alibaba-nacos-config&lt;/artifactId&gt;
-    &lt;/dependency&gt;
-&lt;/dependencies&gt;
-</code></pre>
+<ul>
+<li><a href="https://jaswine.com/source/netty">🔗「源码分析」Netty源代码</a></li>
+</ul></li>
+<li>关于Spring中的Reactor
 
-<h2 id="配置注册信息">配置注册信息</h2>
+<ul>
+<li><a href="#">🔗「使用文档」Spring使用#Reactor模型</a></li>
+</ul></li>
+<li>关于Spring WebFlux
 
-<p>在项目的<code>bootstrap.yml</code>中配置如下信息:</p>
+<ul>
+<li><a href="https://jaswine.com/docs/boot/">🔗「使用文档」SpringBoot使用#WebFlux</a></li>
+<li><a href="https://jaswine.com/source/spring/">🔗「源码分析」Spring源码#WebFlux</a></li>
+</ul></li>
+</ul>
+</blockquote>
 
-<pre><code class="language-yaml">
-spring:
-  application:
-    name: CLOUD-UUM
----
-spring:
-  profiles:
-    active: test
----        
-# nacos 配置
-spring:
-  cloud:
-    nacos:
-      config:
-        # 方便和服务发现分开,更能够体现性能
-        server-addr: 127.0.0.1:8848
-        file-extension: yaml
-        refreshable-dataids: ${spring.application.name}-${spring.profiles.active}.yaml
+<h2 id="核心概念">核心概念</h2>
 
-</code></pre>
+<p><code>Spring Cloud Gateway</code>中核心的三个概念是</p>
 
-<p>在<code>Nacos</code>管理页面配置注册信息：</p>
+<p><strong>Route(路由)</strong></p>
 
-<pre><code class="language-yaml"># Nacos配置
-spring:
-  cloud:
-    nacos:
-      discovery:
-        server-addr: jaswine.top:18848
-</code></pre>
+<p>Route包含以下几个信息:
+- ID:唯一ID
+- URI:实际的目标地址
+- Predicate:判定的谓语动词
+- Filter:过滤器
+- Order:顺序</p>
 
-<h2 id="启动应用">启动应用</h2>
+<p><strong>Predicate</strong></p>
 
-<p>直接启动应用就可以在<code>服务管理-&gt;服务列表</code>中看到启动好的服务了</p>
+<p><strong>Filter</strong></p>
+
+<h2 id="架构">架构</h2>
+
+<p><img src="https://cdn.jaswine.com/Web/Tech-Doc/cloud/cloud_gateway/gateway_arch.png" alt="" /></p>
+
+<h2 id="重要实现类">重要实现类</h2>
+
+<p>其中<code>Gateway Handler Mapping</code>对应的源码类是:</p>
+
+<p><a href="https://www.javadoc.io/static/org.springframework.cloud/spring-cloud-gateway-core/2.1.5.RELEASE/org/springframework/cloud/gateway/handler/RoutePredicateHandlerMapping.html">org.springframework.cloud.gateway.handler.RoutePredicateHandlerMapping</a></p>
+
+<p><code>Gateway Web Handler</code>对应的源码类是:</p>
+
+<p><a href="https://www.javadoc.io/static/org.springframework.cloud/spring-cloud-gateway-core/2.1.5.RELEASE/org/springframework/cloud/gateway/handler/FilteringWebHandler.html">org.springframework.cloud.gateway.handler.FilteringWebHandler</a></p>
 </article>
 
       
@@ -242,11 +236,12 @@ spring:
   <aside class="book-toc level-3 fixed">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#注册服务">注册服务</a>
+<li><a href="#spring-cloud-gateway基础">Spring Cloud Gateway基础</a>
 <ul>
-<li><a href="#引入依赖包">引入依赖包</a></li>
-<li><a href="#配置注册信息">配置注册信息</a></li>
-<li><a href="#启动应用">启动应用</a></li>
+<li><a href="#底层实现">底层实现</a></li>
+<li><a href="#核心概念">核心概念</a></li>
+<li><a href="#架构">架构</a></li>
+<li><a href="#重要实现类">重要实现类</a></li>
 </ul></li>
 </ul>
 </nav>

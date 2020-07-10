@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  
+    
+    0menu
+  
+ | SpringCloud</title>
+
+
+
+<link rel="stylesheet" href="/docs/cloud/book.min.7f2b6faa569004d64a7fe33a947703a13ddd13e8f56261e340ae4c5547c01c9c.css">
+
+
+<link rel="icon" href="/docs/cloud/favicon.png" type="image/x-icon">
+
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav>
+<h2 class="book-brand">
+  <a href="https://jaswine.com/docs/cloud">SpringCloud</a>
+</h2>
+
+
+
+    
+  
+  
+  
+
+  <style>
+  nav ul a[href$="\2f docs\2f cloud\2f docs\2fgateway\2f cloud_gateway\2f 0menu\2f "] {
+      color: #004ed0;
+  }
+  </style>
+
+<ul>
+<li><strong><span style="color:#551A8B">服务发现</span></strong>
+
+<ul>
+<li><strong><em><a href="/docs/cloud/docs/discovery/nacos/0menu/">Nacos</a></em></strong></li>
+</ul></li>
+<li><strong><span style="color:#551A8B">负载均衡</span></strong>
+
+<ul>
+<li><strong><em>Ribbon(客户端)</em></strong></li>
+</ul></li>
+<li><strong><span style="color:#551A8B">服务网关</span></strong>
+
+<ul>
+<li><strong><em><a href="/docs/cloud/docs/gateway/cloud_gateway/0menu/">Spring Cloud Gateway</a></em></strong></li>
+</ul></li>
+<li><strong><span style="color:#551A8B">授权/认证</span></strong>
+
+<ul>
+<li><strong><em><a href="/docs/cloud/docs/auth/oauth2/0menu/">Security OAuth2</a></em></strong></li>
+</ul></li>
+<li><strong><span style="color:#551A8B">服务配置</span></strong>
+
+<ul>
+<li><strong><em>Nacos Config</em></strong></li>
+</ul></li>
+<li><strong><span style="color:#551A8B">服务调用</span></strong>
+
+<ul>
+<li><strong><em><a href="/docs/cloud/docs/call/feign/0menu/">Feign</a></em></strong></li>
+</ul></li>
+<li><strong><span style="color:#551A8B">服务容错</span></strong>
+
+<ul>
+<li><strong><em><a href="/docs/cloud/docs/error/hystrix/0menu/">Spring Cloud Hystrix</a></em></strong></li>
+<li><strong><em><a href="/docs/cloud/docs/error/sentinel/0menu/">Spring Cloud Sentinel</a></em></strong></li>
+</ul></li>
+<li><strong><span style="color:#551A8B">服务监控</span></strong>
+
+<ul>
+<li><strong><em><a href="/docs/cloud/docs/monitor/sleuth/0menu/">Spring Cloud Sleuth</a></em></strong></li>
+<li><strong><em>Spring Cloud Zipkin</em></strong></li>
+</ul></li>
+<li><strong><span style="color:#551A8B">消息驱动</span></strong>
+
+<ul>
+<li><strong><em><a href="/docs/cloud/docs/bus/rocketmq/0menu/">Stream-RocketMQ</a></em></strong></li>
+<li><strong><em><a href="/docs/cloud/docs/bus/rabbitmq/0menu/">Stream-RabbitMQ</a></em></strong></li>
+<li><strong><em><a href="/docs/cloud/docs/bus/kafka/0menu/">Stream-Kafka</a></em></strong></li>
+</ul></li>
+<li><strong><span style="color:#551A8B">大型项目架构</span></strong>
+
+<ul>
+<li><a href="#"><strong>分层/分割</strong></a>
+
+<ul>
+<li><a href="#">服务分割</a></li>
+<li><a href="#">数据库分库分表</a></li>
+</ul></li>
+<li><a href="#"><strong>集群/分布式</strong></a></li>
+<li><a href="#"><strong>缓存</strong></a></li>
+<li><a href="#"><strong>异步</strong></a></li>
+<li><a href="#"><strong>冗余</strong></a></li>
+<li><a href="#"><strong>自动化</strong></a></li>
+<li><a href="#"><strong>安全</strong></a></li>
+</ul></li>
+</ul>
+
+
+
+
+
+</nav>
+
+
+
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/docs/cloud/svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>
+  
+    
+    0menu
+  
+</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="spring-cloud-gateway">Spring CLoud Gateway</h1>
+
+<!-- TOC -->
+
+<ul>
+<li><a href="#spring-cloud-gateway">Spring CLoud Gateway</a>
+
+<ul>
+<li><a href="#spring-cloud-gateway基础概念-relref-docsgatewaycloud_gatewaybasemd-"><a href="/docs/cloud/docs/gateway/cloud_gateway/base/">Spring Cloud Gateway基础概念</a></a></li>
+<li><a href="#默认的predicate及自定义predicate-relref-docsgatewaycloud_gatewaypredicatemd-"><a href="/docs/cloud/docs/gateway/cloud_gateway/predicate/">默认的Predicate及自定义Predicate</a></a></li>
+<li><a href="#默认的的filter及自定义filter-relref-docsgatewaycloud_gatewayfiltermd-"><a href="/docs/cloud/docs/gateway/cloud_gateway/filter/">默认的的Filter及自定义Filter</a></a></li>
+<li><a href="#全局的filter-relref-docsgatewaycloud_gatewayglobal_filtermd-"><a href="/docs/cloud/docs/gateway/cloud_gateway/global_filter/">全局的Filter</a></a></li>
+<li><a href="#动态配置routeredis存储-relref-docsgatewaycloud_gatewayusemd-"><a href="/docs/cloud/docs/gateway/cloud_gateway/use/">动态配置Route(Redis存储)</a></a></li>
+<li><a href="#gateway整合sentinel实现容错-relref-docsgatewaycloud_gatewaysentinelmd-"><a href="/docs/cloud/docs/gateway/cloud_gateway/sentinel/">Gateway整合Sentinel实现容错</a></a></li>
+<li><a href="#gateway整合hystrix实现容错不推荐-relref-docsgatewaycloud_gatewayhystrixmd-"><a href="/docs/cloud/docs/gateway/cloud_gateway/hystrix/">Gateway整合Hystrix实现容错(不推荐)</a></a></li>
+<li><a href="#gateway限流-relref-docsgatewaycloud_gatewaylimitmd-"><a href="/docs/cloud/docs/gateway/cloud_gateway/limit/">Gateway限流</a></a></li>
+<li><a href="#gateway中的actuator-relref-docsgatewaycloud_gatewayactuatormd-"><a href="/docs/cloud/docs/gateway/cloud_gateway/actuator/">Gateway中的Actuator</a></a></li>
+<li><a href="#gateway排查错误技巧-relref-docsgatewaycloud_gatewayerrormd-"><a href="/docs/cloud/docs/gateway/cloud_gateway/error/">Gateway排查错误技巧</a></a></li>
+</ul></li>
+</ul>
+
+<!-- /TOC -->
+
+<h2 id="spring-cloud-gateway基础概念-hahahugoshortcode-s10-hbhb"><a href="/docs/cloud/docs/gateway/cloud_gateway/base/">Spring Cloud Gateway基础概念</a></h2>
+
+<h2 id="默认的predicate及自定义predicate-hahahugoshortcode-s11-hbhb"><a href="/docs/cloud/docs/gateway/cloud_gateway/predicate/">默认的Predicate及自定义Predicate</a></h2>
+
+<h2 id="默认的的filter及自定义filter-hahahugoshortcode-s12-hbhb"><a href="/docs/cloud/docs/gateway/cloud_gateway/filter/">默认的的Filter及自定义Filter</a></h2>
+
+<h2 id="全局的filter-hahahugoshortcode-s13-hbhb"><a href="/docs/cloud/docs/gateway/cloud_gateway/global_filter/">全局的Filter</a></h2>
+
+<h2 id="动态配置route-redis存储-hahahugoshortcode-s14-hbhb"><a href="/docs/cloud/docs/gateway/cloud_gateway/use/">动态配置Route(Redis存储)</a></h2>
+
+<h2 id="gateway整合sentinel实现容错-hahahugoshortcode-s15-hbhb"><a href="/docs/cloud/docs/gateway/cloud_gateway/sentinel/">Gateway整合Sentinel实现容错</a></h2>
+
+<h2 id="gateway整合hystrix实现容错-不推荐-hahahugoshortcode-s16-hbhb"><a href="/docs/cloud/docs/gateway/cloud_gateway/hystrix/">Gateway整合Hystrix实现容错(不推荐)</a></h2>
+
+<h2 id="gateway限流-hahahugoshortcode-s17-hbhb"><a href="/docs/cloud/docs/gateway/cloud_gateway/limit/">Gateway限流</a></h2>
+
+<h2 id="gateway中的actuator-hahahugoshortcode-s18-hbhb"><a href="/docs/cloud/docs/gateway/cloud_gateway/actuator/">Gateway中的Actuator</a></h2>
+
+<h2 id="gateway排查错误技巧-hahahugoshortcode-s19-hbhb"><a href="/docs/cloud/docs/gateway/cloud_gateway/error/">Gateway排查错误技巧</a></h2>
+</article>
+
+      
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-3 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#spring-cloud-gateway">Spring CLoud Gateway</a>
+<ul>
+<li><a href="#spring-cloud-gateway基础概念-hahahugoshortcode-s10-hbhb"><a href="HAHAHUGOSHORTCODE-s10-HBHB">Spring Cloud Gateway基础概念</a></a></li>
+<li><a href="#默认的predicate及自定义predicate-hahahugoshortcode-s11-hbhb"><a href="HAHAHUGOSHORTCODE-s11-HBHB">默认的Predicate及自定义Predicate</a></a></li>
+<li><a href="#默认的的filter及自定义filter-hahahugoshortcode-s12-hbhb"><a href="HAHAHUGOSHORTCODE-s12-HBHB">默认的的Filter及自定义Filter</a></a></li>
+<li><a href="#全局的filter-hahahugoshortcode-s13-hbhb"><a href="HAHAHUGOSHORTCODE-s13-HBHB">全局的Filter</a></a></li>
+<li><a href="#动态配置route-redis存储-hahahugoshortcode-s14-hbhb"><a href="HAHAHUGOSHORTCODE-s14-HBHB">动态配置Route(Redis存储)</a></a></li>
+<li><a href="#gateway整合sentinel实现容错-hahahugoshortcode-s15-hbhb"><a href="HAHAHUGOSHORTCODE-s15-HBHB">Gateway整合Sentinel实现容错</a></a></li>
+<li><a href="#gateway整合hystrix实现容错-不推荐-hahahugoshortcode-s16-hbhb"><a href="HAHAHUGOSHORTCODE-s16-HBHB">Gateway整合Hystrix实现容错(不推荐)</a></a></li>
+<li><a href="#gateway限流-hahahugoshortcode-s17-hbhb"><a href="HAHAHUGOSHORTCODE-s17-HBHB">Gateway限流</a></a></li>
+<li><a href="#gateway中的actuator-hahahugoshortcode-s18-hbhb"><a href="HAHAHUGOSHORTCODE-s18-HBHB">Gateway中的Actuator</a></a></li>
+<li><a href="#gateway排查错误技巧-hahahugoshortcode-s19-hbhb"><a href="HAHAHUGOSHORTCODE-s19-HBHB">Gateway排查错误技巧</a></a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  
+  
+  
+</body>
+
+</html>

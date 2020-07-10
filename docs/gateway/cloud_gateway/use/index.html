@@ -12,7 +12,7 @@
 <title>
   
     
-    Register
+    Use
   
  | SpringCloud</title>
 
@@ -50,7 +50,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   <style>
-  nav ul a[href$="\2f docs\2f cloud\2f docs\2f discovery\2fnacos\2fregister\2f "] {
+  nav ul a[href$="\2f docs\2f cloud\2f docs\2fgateway\2f cloud_gateway\2fuse\2f "] {
       color: #004ed0;
   }
   </style>
@@ -141,7 +141,7 @@ https://github.com/alex-shpak/hugo-book
   <strong>
   
     
-    Register
+    Use
   
 </strong>
 </header>
@@ -149,86 +149,50 @@ https://github.com/alex-shpak/hugo-book
       
 <article class="markdown">
 
-<h1 id="注册服务">注册服务</h1>
+<h1 id="使用gateway-使用数据库存储路由信息">使用Gateway(使用数据库存储路由信息)</h1>
 
 <hr />
 
 <ul>
-<li><strong>@Nacos版本:</strong>1.1.4</li>
-<li><strong>@SpringCloud-Alibaba版本:</strong>2.1.0.RELEASE</li>
+<li><strong>@SpringCloud版本:</strong>Greenwich.SR5</li>
 </ul>
 
 <hr />
 
-<h2 id="引入依赖包">引入依赖包</h2>
+<p><code>gateway</code>在项目中是网关的作用，这样众多的微服务的系统就可以统一接口了。所有的开头的都是相同的，不同的后缀代表的是不同的微服务。</p>
 
-<pre><code class="language-xml">
-&lt;!-- SpringCloud-Alibaba依赖关系 --&gt;
-&lt;dependencyManagement&gt;
-    &lt;dependencies&gt;
-        &lt;dependency&gt;
-            &lt;groupId&gt;com.alibaba.cloud&lt;/groupId&gt;
-            &lt;artifactId&gt;spring-cloud-alibaba-dependencies&lt;/artifactId&gt;
-            &lt;version&gt;2.1.0.RELEASE&lt;/version&gt;
-            &lt;type&gt;pom&lt;/type&gt;
-            &lt;scope&gt;import&lt;/scope&gt;
-        &lt;/dependency&gt;
-     &lt;/dependencies&gt;
-&lt;/dependencyManagement&gt;
+<blockquote>
+<p><code>spring-cloud-starter-gateway</code>是基于<code>spring5</code>中的<code>WebFlux</code>来编写的,实现了响应式编程。关于<code>WebFlux</code>看这里// TODO</p>
+</blockquote>
 
-&lt;!-- 引入Nacos依赖 --&gt;
-&lt;dependencies&gt;
-    &lt;!--nacos--&gt;
-    &lt;dependency&gt;
-        &lt;groupId&gt;com.alibaba.cloud&lt;/groupId&gt;
-        &lt;artifactId&gt;spring-cloud-alibaba-nacos-discovery&lt;/artifactId&gt;
-    &lt;/dependency&gt;
+<p><code>spring-cloud-gateway</code>提供三种配置路由的方式:</p>
 
-    &lt;dependency&gt;
-        &lt;groupId&gt;com.alibaba.cloud&lt;/groupId&gt;
-        &lt;artifactId&gt;spring-cloud-alibaba-nacos-config&lt;/artifactId&gt;
-    &lt;/dependency&gt;
-&lt;/dependencies&gt;
+<ul>
+<li>配置文件(bootstrap.yaml)</li>
+<li>Java代码配置</li>
+<li>动态配置(<strong>推荐</strong>)</li>
+</ul>
+
+<p>前两种配置方式都是嵌入到代码或者配置文件中的，不友好，一笔带过。使用数据库来存储路由信息有利于在线运维和动态扩展。</p>
+
+<h2 id="0-前期准备">0.前期准备</h2>
+
+<h3 id="0-1-引入依赖">0.1.引入依赖</h3>
+
+<p>默认已经引入<code>nacos</code>或者<code>Eureka</code></p>
+
+<pre><code class="language-xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-cloud-starter-gateway&lt;/artifactId&gt;
+&lt;/dependency&gt;
 </code></pre>
 
-<h2 id="配置注册信息">配置注册信息</h2>
+<h3 id="0-2-编写配置文件">0.2.编写配置文件</h3>
 
-<p>在项目的<code>bootstrap.yml</code>中配置如下信息:</p>
+<h2 id="1-配置文件形式-yaml文件">1.配置文件形式(yaml文件)</h2>
 
 <pre><code class="language-yaml">
-spring:
-  application:
-    name: CLOUD-UUM
----
-spring:
-  profiles:
-    active: test
----        
-# nacos 配置
-spring:
-  cloud:
-    nacos:
-      config:
-        # 方便和服务发现分开,更能够体现性能
-        server-addr: 127.0.0.1:8848
-        file-extension: yaml
-        refreshable-dataids: ${spring.application.name}-${spring.profiles.active}.yaml
-
 </code></pre>
-
-<p>在<code>Nacos</code>管理页面配置注册信息：</p>
-
-<pre><code class="language-yaml"># Nacos配置
-spring:
-  cloud:
-    nacos:
-      discovery:
-        server-addr: jaswine.top:18848
-</code></pre>
-
-<h2 id="启动应用">启动应用</h2>
-
-<p>直接启动应用就可以在<code>服务管理-&gt;服务列表</code>中看到启动好的服务了</p>
 </article>
 
       
@@ -242,11 +206,14 @@ spring:
   <aside class="book-toc level-3 fixed">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#注册服务">注册服务</a>
+<li><a href="#使用gateway-使用数据库存储路由信息">使用Gateway(使用数据库存储路由信息)</a>
 <ul>
-<li><a href="#引入依赖包">引入依赖包</a></li>
-<li><a href="#配置注册信息">配置注册信息</a></li>
-<li><a href="#启动应用">启动应用</a></li>
+<li><a href="#0-前期准备">0.前期准备</a>
+<ul>
+<li><a href="#0-1-引入依赖">0.1.引入依赖</a></li>
+<li><a href="#0-2-编写配置文件">0.2.编写配置文件</a></li>
+</ul></li>
+<li><a href="#1-配置文件形式-yaml文件">1.配置文件形式(yaml文件)</a></li>
 </ul></li>
 </ul>
 </nav>

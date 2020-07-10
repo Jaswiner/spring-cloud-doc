@@ -12,6 +12,15 @@
     
     <item>
       <title></title>
+      <link>https://jaswine.com/docs/cloud/docs/auth/oauth2/0menu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/cloud/docs/auth/oauth2/0menu/</guid>
+      <description> 使用Spring Cloud Oauth2完成微服务授权与鉴权 </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://jaswine.com/docs/cloud/docs/base/auth/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -53,6 +62,51 @@
       
       <guid>https://jaswine.com/docs/cloud/docs/base/zuul/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jaswine.com/docs/cloud/docs/bus/kafka/0menu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/cloud/docs/bus/kafka/0menu/</guid>
+      <description> 使用Kafka完成消息总线 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jaswine.com/docs/cloud/docs/bus/rabbitmq/0menu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/cloud/docs/bus/rabbitmq/0menu/</guid>
+      <description> 使用Rabbit MQ完成消息总线 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jaswine.com/docs/cloud/docs/bus/rocketmq/0menu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/cloud/docs/bus/rocketmq/0menu/</guid>
+      <description> 使用Rocket MQ完成消息总线 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jaswine.com/docs/cloud/docs/call/feign/0menu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/cloud/docs/call/feign/0menu/</guid>
+      <description> 使用Feign作为声明式HTTP客户端  使用Feign作为声明式HTTP客户端  使用Feign调用HTTP Feign配置 整合Sentinel   使用Feign调用HTTP Feign配置 整合Sentinel </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jaswine.com/docs/cloud/docs/discovery/nacos/0menu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/cloud/docs/discovery/nacos/0menu/</guid>
+      <description> Nacos  Nacos  Nacos安装 向Nacos组册服务 Nacos多环境配置&amp;amp;服务隔离 Nacos元数据 高可用的Nacos   Nacos安装 向Nacos组册服务 Nacos多环境配置&amp;amp;服务隔离 Nacos元数据 高可用的Nacos </description>
     </item>
     
     <item>
@@ -114,37 +168,134 @@ spring: application: name: CLOUD-UUM --- spring: profiles: active: test --- # na
     
     <item>
       <title></title>
-      <link>https://jaswine.com/docs/cloud/docs/gateway/limit/</link>
+      <link>https://jaswine.com/docs/cloud/docs/error/hystrix/0menu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jaswine.com/docs/cloud/docs/gateway/limit/</guid>
+      <guid>https://jaswine.com/docs/cloud/docs/error/hystrix/0menu/</guid>
+      <description> 使用Hystrix完成微服务容错 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jaswine.com/docs/cloud/docs/error/sentinel/0menu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/cloud/docs/error/sentinel/0menu/</guid>
+      <description> 使用Sentinel作为服务容错 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/0menu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/0menu/</guid>
+      <description> Spring CLoud Gateway  Spring CLoud Gateway  Spring Cloud Gateway基础概念 默认的Predicate及自定义Predicate 默认的的Filter及自定义Filter 全局的Filter 动态配置Route(Redis存储) Gateway整合Sentinel实现容错 Gateway整合Hystrix实现容错(不推荐) Gateway限流 Gateway中的Actuator Gateway排查错误技巧   Spring Cloud Gateway基础概念 默认的Predicate及自定义Predicate 默认的的Filter及自定义Filter 全局的Filter 动态配置Route(Redis存储) Gateway整合Sentinel实现容错 Gateway整合Hystrix实现容错(不推荐) Gateway限流 Gateway中的Actuator Gateway排查错误技巧 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/actuator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/actuator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/base/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/base/</guid>
+      <description>Spring Cloud Gateway基础  Spring Cloud Gateway基础  底层实现 核心概念 架构 重要实现类   底层实现 Spring Cloud Gateway底层是使用netty、Reactor和SpringBoot WebFlux实现的
+  关于Netty  🔗「源码分析」Netty源代码  关于Spring中的Reactor  🔗「使用文档」Spring使用#Reactor模型  关于Spring WebFlux  🔗「使用文档」SpringBoot使用#WebFlux 🔗「源码分析」Spring源码#WebFlux    核心概念 Spring Cloud Gateway中核心的三个概念是
+Route(路由)
+Route包含以下几个信息: - ID:唯一ID - URI:实际的目标地址 - Predicate:判定的谓语动词 - Filter:过滤器 - Order:顺序
+Predicate
+Filter
+架构 重要实现类 其中Gateway Handler Mapping对应的源码类是:
+org.springframework.cloud.gateway.handler.RoutePredicateHandlerMapping
+Gateway Web Handler对应的源码类是:
+org.springframework.cloud.gateway.handler.FilteringWebHandler</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/error/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/error/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/filter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/filter/</guid>
+      <description> 默认的Filter及自定义Filter  默认的Filter及自定义Filter  Filter是做什么的？ 自带的Filter 如何自定义Filter 如何配置使用Filter   Filter是做什么的？ 过滤请求
+自带的Filter    缩写 作用     AddRequestHeader    AddRequestParameter    AddResponseHeader    DedupeResponseHeader    FallbackHeaders    MapRequestHeader    PrefixPath    PreserveHostHeader    RequestRateLimiter    RedirectTo    RemoveHopByHopHeadersFilter    RemoveRequestHeader    RemoveResponseHeader    RewritePath    RewriteResponseHeader    SaveSession    SecureHeaders    SetPath    SetResponseHeader    SetStatus    StripPrefix    Retry    RequestSize    ModifyRequestBody    ModifyResponseBody    Default     如何自定义Filter  方式1:继承AbstractGatewayFilterFactory(参考RequestSizeGatewayFilterFactory) 方式2:继承AbstractNameValueGatewayFilterFactory(参考AddRequestHeaderGatewayFilterFactory)  如何配置使用Filter </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/global_filter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/global_filter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/hystrix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/hystrix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/limit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/limit/</guid>
       <description> Gateway实现限流 </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://jaswine.com/docs/cloud/docs/gateway/predicate/</link>
+      <link>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/predicate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jaswine.com/docs/cloud/docs/gateway/predicate/</guid>
-      <description> 自定义Predicate </description>
+      <guid>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/predicate/</guid>
+      <description>默认的Predicate及自定义Predicate  默认的Predicate及自定义Predicate  Predicate做什么的？ 自带的Predicate 如何自定义Predicate 如何配置使Predicate生效   🔗「源码分析」Spring Cloud Gateway源码#Predicate
+Predicate做什么的？ 符合Predicate的条件，就使用该路由的配置，否则就不管
+For Example:
+ 请求路径匹配:   访问/app1/**全部匹配到 https://jaswine.com 这个网站上
+  规定时间点可以访问   在早上9:00到下午17:00可以访问网站
+ 自带的Predicate 🔗「官方Doc」Spring Cloud Gateway自带的Predicate
+   缩写 作用     After 在改时间后可用   Before 在该时间之前可用   Between 在该时间段可用   Cookie 带有符合一定格式的cookie可用   Header 带有特定格式的请求头的时候可用   Host 只允许host满足规定格式时候可用   Method 只允许特定的方法可用   Path 只有访问一定格式的路径时候可用   Query 只有带有规定参数的时候可用   RemoteAddr 符合规定的某一网段可用   Weight 配置路由比重    如何自定义Predicate  1.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://jaswine.com/docs/cloud/docs/gateway/sentinel/</link>
+      <link>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/sentinel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jaswine.com/docs/cloud/docs/gateway/sentinel/</guid>
+      <guid>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/sentinel/</guid>
       <description> Gateway整合Sentinel </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://jaswine.com/docs/cloud/docs/gateway/use/</link>
+      <link>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/use/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jaswine.com/docs/cloud/docs/gateway/use/</guid>
+      <guid>https://jaswine.com/docs/cloud/docs/gateway/cloud_gateway/use/</guid>
       <description> 使用Gateway(使用数据库存储路由信息)  @SpringCloud版本:Greenwich.SR5  gateway在项目中是网关的作用，这样众多的微服务的系统就可以统一接口了。所有的开头的都是相同的，不同的后缀代表的是不同的微服务。
  spring-cloud-starter-gateway是基于spring5中的WebFlux来编写的,实现了响应式编程。关于WebFlux看这里// TODO
  spring-cloud-gateway提供三种配置路由的方式:
@@ -155,11 +306,29 @@ spring: application: name: CLOUD-UUM --- spring: profiles: active: test --- # na
     
     <item>
       <title></title>
+      <link>https://jaswine.com/docs/cloud/docs/loadblance/ribbon/0menu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/cloud/docs/loadblance/ribbon/0menu/</guid>
+      <description> 使用Ribbon来实现服务端负载均衡  使用Ribbon来实现服务端负载均衡  使用Ribbon 整合Nacos-支持权重   使用Ribbon 整合Nacos-支持权重 </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://jaswine.com/docs/cloud/docs/loadblance/ribbon/use/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jaswine.com/docs/cloud/docs/loadblance/ribbon/use/</guid>
       <description>使用Ribbon实现服务调用的负载均衡  @SpringCloud-Alibaba版本:2.1.0.RELEASE  在Spring Cloud Alibaba中的nacos-discovery组件中我们已经集成了Ribbon，所有我们不用再引入依赖</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jaswine.com/docs/cloud/docs/monitor/sleuth/0menu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jaswine.com/docs/cloud/docs/monitor/sleuth/0menu/</guid>
+      <description> 使用Sleuth完成调用链监控 </description>
     </item>
     
   </channel>
